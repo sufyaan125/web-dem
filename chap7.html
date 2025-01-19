@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <h1>Booking Appointments</h1>
+        </header>
+    <script src="project.js"></script>
+    <nav>
+        <ul>
+            <li><a href="project.html">home</a></li>
+            <li>
+                <a href="chapters.html">chapters</a>
+                <ul class="drowpdown">
+       <li> <a href="chap1.html">chap 1</a></li>
+      <li>  <a href="chap2.html">chap 2</a></li>
+      <li> <a href="chap3.html">chap 3</a></li>
+      <li><a href="chap4.html">chap 4</a></li>
+      <li><a href="chap5.html">chap 5</a></li>
+      <li><a href="chap6.html">chap 6</a></li>
+      <li><a href="chap7.html">chap 7</a></li>
+      <li><a href="chap8.html">chap 8</a></li>
+        </li>
+        </ul>
+    </li>
+    <li><a href="lap.html">lap</a></li>
+    <li><a href="asignment.html">Assigments</a></li>
+    <li><a href="about.as.html">About us</a></li>
+    <li><a href="project.html">project</a></li>
+
+</ul>
+    </nav> <br> <br> <br>
+    <!-- example 1 -->
+   <button id="mybutton">click me</button>
+   <script>
+   //chapter 7
+    const imans= document.getElementById("mybutton");
+    imans.addEventListener("click",myfunction);
+    function myfunction(){
+        alert("button clicked");
+    }</script>
+    <!-- example2 -->
+  <button  onclick="my()">click me 2</button>
+  <div id="myelement">hover over </div>
+  <script>
+  let el=document.getElementById("myelement");
+  el.addEventListener("mouseover",function(){
+  el.style.backgroundColor="green";
+    });
+    el.addEventListener("mouseout",function(){
+        el.style.backgroundColor="blue";
+    })</script>
+    <!-- example 3 -->
+<input type="text" id="textinput" placeholder="write something">
+<div id="output"></div>
+
+<script>
+//     const textinput=document.getElementById("textinput");
+// const outputdiv=document.getElementById("output");
+// textinput.addEventListener("keydown",function(event){
+// outputdiv.innerText= keydown: ${event.key};
+// });
+// textinput.addEventListener("keypress",function(event){
+//     outputdiv.innerText += \nkeypress:${event.key};
+// });
+// textinput.addEventListener("keyup",function(event){
+//     outputdiv.innerText += \nkeyup:${event.key};
+// });
+</script>
+<!-- example4 -->
+<input type="text" class="facous" placeholder="type something">
+<div class="fc events"></div>
+<!-- script -->
+ <script>
+            const facous = document.getElementsByClassName("facous");
+        const fcevent = document.getElementsByClassName("fc events");
+
+      facous.addEventListener("focus", function () {
+      fcevent("Element focused!", "focused");
+});
+
+facous .addEventListener("blur", function () {
+    fcevent("Element blurred!", "blurred");
+});
+
+function updateOutput(message, className) {
+    fcevent.innerText = message;
+    fcevent.className = className;
+}
+
+ </script>
+   
+   <footer>
+    <h2 id="footer">booking@email.com</h2>
+</footer>
+   
+</body>
+</html>
